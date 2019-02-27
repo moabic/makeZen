@@ -1,0 +1,12 @@
+/* components/add/cmp.wxss */
+.title {
+    padding:5rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    color:#fff;
+    border:1rpx solid black;
+    margin:10rpx;
+    width:50rpx;
+}

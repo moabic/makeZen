@@ -1,0 +1,24 @@
+.wrapper{
+    padding:10rpx 10rpx;
+}
+.text{
+    text-align: center;
+    font-size:30rpx;
+    color:#666;
+}
+.image {
+    width:730rpx;
+    height:700rpx;
+    margin-top:30rpx;
+}
+ 
+.wrap_subT {
+    margin-top:30rpx;
+    display:flex;
+    flex-wrap: wrap;
+}
+.subTitle {
+    margin:15rpx;
+    border:2rpx solid black;
+    padding:5rpx;
+}

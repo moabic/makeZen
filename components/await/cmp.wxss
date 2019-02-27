@@ -1,0 +1,25 @@
+.wrapper {
+    width:730rpx;
+    height:800rpx;
+    background-color:#999;
+    margin-left:10rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.radius {
+    width:50rpx;
+    height:50rpx;
+    border:10rpx solid #666;
+    border-radius: 50%;
+    border-left-color: transparent;
+    animation: run 1s linear infinite;
+}
+@keyframes run {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

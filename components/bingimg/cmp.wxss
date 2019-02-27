@@ -1,0 +1,12 @@
+/* components/bingimg/cmp.wxss */
+.wrapper {
+    padding:0 20rpx;
+}
+.image{
+    width:710rpx;
+    height:600rpx;
+}
+.text {
+    margin-top:20rpx;
+    color:#666;
+}

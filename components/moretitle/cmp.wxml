@@ -1,0 +1,5 @@
+<view class="wrapper">
+    <slot name="before"></slot>
+    <text class="title" wx:for="{{title}}">{{item.type}}</text>
+    <slot name="after"></slot>
+</view>

@@ -1,0 +1,43 @@
+.wrapper {
+    padding:0 10rpx;
+}
+.wrapper-video {
+    position: relative;
+}
+.video,.video-img{
+    width:730rpx;
+    height:500rpx;
+}
+/* 组件上面的按钮 */
+.cover {
+    width:120rpx;
+    height:120rpx;
+    background-color:black;
+    border-radius: 50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+.cover-image {
+    width:50rpx;
+    height:50rpx;
+    border-radius: 50%;
+}
+.cover-text {
+    color:#fff;
+    font-size:30rpx;
+}
+
+/* 内容 */
+.mainTitle {
+    margin-top:20rpx;
+}
+.mainTitle-text {
+    font-size:40rpx;
+    color:#666;
+}

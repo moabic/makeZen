@@ -1,0 +1,6 @@
+/* components/ellipsis/cmp.wxss */
+.title {
+    padding:5rpx;
+    border:1rpx solid black;
+    margin:10rpx;
+}

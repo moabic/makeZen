@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "st-imgSrc" : "/components/bingimg/cmp",
+    "st-pureText": "/components/pureText/cmp",
+    "st-jiugongge": "/components/jiugongge/cmp",
+    "st-video" : "/components/video/cmp",
+    "st-text": "/components/pureText2/cmp",
+    "st-intelligence": "/components/intelligence/cmp",
+    "st-nav": "/components/nav/cmp",
+    "st-time" : "/components/time/cmp",
+    "st-await" : "/components/await/cmp"
+  }
+}

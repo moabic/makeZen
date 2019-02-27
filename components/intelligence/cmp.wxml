@@ -1,0 +1,8 @@
+<view class="wrapper">
+    <view class="text">{{title}}</view>
+    <image  class="image" src="{{imgSrc}}"/>
+    <st-moreTitle title="{{subTitle}}">
+        <st-add slot="before"></st-add>
+        <st-ellipsis slot="after"></st-ellipsis>
+    </st-moreTitle>
+</view>

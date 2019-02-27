@@ -1,0 +1,18 @@
+/* components/pureText2/cmp.wxss */
+
+.wrapper {
+    padding:0 20rpx;
+}
+.minuteText {
+    text-indent: 2em;
+    font-size:40rpx;
+}
+
+
+.subText{ 
+    margin-top:20rpx;
+    width:710rpx;
+    color:#666;
+    font-size:30rpx;
+    text-indent: 2em;
+}

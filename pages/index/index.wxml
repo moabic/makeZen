@@ -1,0 +1,41 @@
+<st-nav catch:nav="navTap"></st-nav>
+<st-time></st-time>
+<st-intelligence wx:if="{{Recommend.imgSrc}}" title="{{Recommend.title}}" imgSrc="{{Recommend.imgSrc}}" subTitle="{{MarkType}}"></st-intelligence>
+<st-await wx:else="{{!Recommend.imgSrc}}"></st-await>
+<view class="maximumPage" wx:for="{{getArticle}}" wx:key="*this">
+    <!-- 头像和马克人数 -->
+    <view class="mark">
+        <image src="{{item.mark.avatar}}" class="avatarImage" />
+        <text class="count">{{item.mark.people}}等{{item.mark.count}}人马克了</text>
+    </view>
+    <st-imgSrc wx:if="{{item.type === 0}}" imgSrc="{{item.imgArray[0]}}" title="{{item.mainTitle}}"></st-imgSrc>
+    <st-pureText wx:if="{{item.type === 2}}" imgSrc="{{item.imgArray[0]}}" 
+                subTitle="{{item.subHead}}"
+                 minuteTitle="{{item.mainTitle}}"></st-pureText>
+    <st-jiugongge wx:if="{{item.type === 1}}"  title="{{item.mainTitle}}"></st-jiugongge>
+    <st-video wx:if="{{item.type === 3}}" imgSrc="{{item.video.poster}}" 
+              mainTitle="{{item.mainTitle}}" videoSrc="{{item.video.src}}"></st-video>
+    <st-text wx:if="{{item.type === 4}}" minuteTitle="{{item.mainTitle}}" subTitle="{{item.subHead}}"></st-text>
+    <!-- 喜欢和不喜欢 -->
+    <view class="wrapper">
+        <text class="title">{{item.tag}}</text>
+        <view class="content">
+            <view   class="active" catch:tap="sheet">{{yinyong}}</view>
+            <button open-type="share" class="button">
+                <image  class="active" src="{{imgSrc}}"/>
+            </button>
+            <image  class="active" 
+                    catch:tap="onTap" 
+                    data-like="{{index}}"
+                    wx:if="{{like[index]}}" 
+                    src="{{dislikeImageSrc}}"/>
+            <!-- 喜欢和不喜欢 -->
+            <image  class="active" 
+                    catch:tap="onTap" 
+                    data-like="{{index}}"
+                    wx:else="{{like[index]}}" 
+                    src="{{likeImageSrc}}" />
+        </view>
+    </view>
+</view>
+<view class="nomore">没有更多了</view>

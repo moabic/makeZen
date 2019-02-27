@@ -1,0 +1,33 @@
+<view class="wrapper">
+    <view class="wrapper-video">
+        <!-- 视频组件 -->
+        <video class="video" 
+                title="{{mainTitle}}"
+                bindended = "bindended"
+               hidden="{{!show}}" 
+               src="{{videoSrc}}"
+               id="{{videoId}}"/>
+        <!-- 视频封面 -->
+        <image src="{{imgSrc}}" 
+               class="video-img"  
+               hidden="{{show}}"/>
+        <!-- 组件上面的播放 -->
+        <cover-view class="cover" catch:tap="onTap" hidden="{{show}}">
+            <cover-image src="/image/bofang.jpg" class="cover-image" ></cover-image>
+            <cover-view class="cover-text">{{time(videoTime)}}</cover-view>
+        </cover-view>
+    </view>
+    <view class="mainTitle">
+        <text class="mainTitle-text">{{mainTitle}}</text>
+    </view>
+</view>
+<wxs module="time">
+    var time = function(value) {
+        var minute = Math.floor( value / 60 );
+        var second = value % 60;
+        minute = minute < 10 ? '0' + minute : minute;
+        second = second < 10 ? '0' + second : second;
+        return minute + ':' + second
+    }
+    module.exports = time
+</wxs>

@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "st-moreTitle" : "/components/moretitle/cmp",
+    "st-add" : "/components/add/cmp",
+    "st-ellipsis" : "/components/ellipsis/cmp"
+  }
+}

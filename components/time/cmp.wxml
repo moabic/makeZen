@@ -1,0 +1,3 @@
+<view class="wrapper">
+    <text class="text">{{time}}</text>
+</view>

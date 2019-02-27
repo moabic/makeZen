@@ -1,0 +1,9 @@
+<view class="wrapper" >
+    <view class="content-text" catch:tap="onTap">
+        <view class="minuteTitle">{{minuteTitle}}</view>
+        <view class="subTitle">{{subTitle}}</view>
+    </view>
+    <view class="content-image">
+        <image class="image" src="{{imgSrc}}" catch:tap="imageTap"/>
+    </view>
+</view>

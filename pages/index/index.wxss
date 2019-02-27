@@ -1,0 +1,65 @@
+/* pages/index/index.wxss */
+.maximumPage {
+    margin-top:100rpx;
+}
+/* 头像和马克人数 */
+.mark {
+    display:flex;
+    align-items: center;
+}
+.avatarImage {
+    width:60rpx;
+    height:60rpx;
+    border-radius: 50%;
+    margin:20rpx 20rpx;
+}
+.count {
+    color:hsl(22, 62%, 55%);
+}
+
+/* 喜欢或者不喜欢 */
+.wrapper{
+    margin-top:30rpx;
+    padding:0 20rpx;
+    display:flex;
+    justify-content: space-between;
+}
+.title {
+    border:1rpx solid black;
+    padding:5rpx;
+}
+.content {
+    width:200rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.button::after {
+    border:none;
+}
+.button{
+    background-color:transparent;
+    display: flex;
+    position: relative;
+    top:6rpx;
+    padding:0;
+}
+.active {
+    width:40rpx;
+    height:40rpx;
+}
+.active:first-child{
+    position: relative;
+    top:-5rpx;
+}
+.active:nth-child(3){
+    position: relative;
+    top:5rpx;
+}
+
+.nomore {
+    text-align: center;
+    color:#666;
+    font-size:30rpx;
+}
+

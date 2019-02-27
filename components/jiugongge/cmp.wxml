@@ -1,0 +1,15 @@
+<view class="content">
+    <view class="img-content">
+        <image class="image"
+               wx:for="{{imgSrc}}"
+               wx:key="*this"
+               src="{{item}}"
+               catch:tap="onTapjiu"
+               data-index="{{index}}"
+               />
+        <view class="picturePages" catch:tap="picturePages" wx:if="{{imgSrc.length > 9}}">
+            <text >{{imgSrc.length - 9}}</text>
+        </view>
+    </view>
+    <view class="img-text">{{title}}</view>
+</view>

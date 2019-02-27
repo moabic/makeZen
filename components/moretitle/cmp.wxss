@@ -1,0 +1,11 @@
+/* components/moretitle/cmp.wxss */
+.wrapper {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.title {
+    padding:5rpx;
+    border:2rpx solid black;
+    margin:10rpx;
+}

@@ -1,0 +1,24 @@
+.wrapper {
+    padding:0 30rpx;
+    box-sizing: border-box;
+    margin-bottom:30rpx;
+    background-color:#f0f0f0ec;
+    height:100rpx;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 99;
+}
+.mark:first-child{
+    margin-left:0;
+}
+.mark{
+    font-size:50rpx;
+    color:#999;
+    margin-left:30rpx;
+    white-space: nowrap;
+    line-height: 100rpx;
+}
+.active{
+    color:#000;
+}

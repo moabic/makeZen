@@ -1,0 +1,5 @@
+<!--components/bingimg/cmp.wxml-->
+<view class="wrapper">
+    <image class="image" src="{{imgSrc}}"/>
+    <view class="text">{{title}}</view>
+</view>

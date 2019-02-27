@@ -1,0 +1,7 @@
+
+<scroll-view class="wrapper"
+        scroll-x="{{true}}" scroll-into-view="{{marknum}}">
+<text wx:key="*this" wx:for="{{markArr}}" 
+        class="mark {{index === markIndex ? 'active' : ''}}" 
+        bind:tap="onTap" data-index="{{index}}" id="{{'markZ' + index}}">{{item}}</text>
+</scroll-view>
